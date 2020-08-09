@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MyHelperApp</string>
+    <string name="recycler_view">Recycler View</string>
+    <string name="nav_drawer_with_recycler_view">Nav Drawer with Recycler View</string>
+    <string name="nav_drawer_with_sub_menu">Nav Drawer with Sub Menu</string>
+    <string name="navigation_drawer_with_submenu">Navigation Drawer with Submenu</string>
+    <string name="developed_by_rahul_dev">Developed by Rahul Dev</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+</resources>
