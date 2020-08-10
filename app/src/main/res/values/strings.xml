@@ -7,4 +7,9 @@
     <string name="developed_by_rahul_dev">Developed by Rahul Dev</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="custom_drawer">Custom Drawer</string>
+    <string name="kotlin_coroutine">Kotlin Coroutine</string>
+    <string name="download_user_date">Download User Date</string>
+    <string name="increase_count">Increase Count</string>
+    <string name="useful_layout_and_widgets">Useful Layout and Widgets</string>
 </resources>

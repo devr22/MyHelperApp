@@ -19,7 +19,6 @@ class NavDrawerWithSubMenuActivity : AppCompatActivity() {
     private lateinit var submenuList: HashMap<String, List<String>>
 
     private lateinit var drawerLayout: DrawerLayout
-    private lateinit var toolbarTitle: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,7 +26,6 @@ class NavDrawerWithSubMenuActivity : AppCompatActivity() {
         setSupportActionBar(toolbar)
 
         drawerLayout = findViewById(R.id.drawer_layout)
-        toolbarTitle = findViewById(R.id.nav_content_toolbar_title)
 
         val toggle: ActionBarDrawerToggle = object : ActionBarDrawerToggle(
             this, drawerLayout,
