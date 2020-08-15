@@ -1,5 +1,6 @@
 package com.example.myhelperapp.coroutines
 
+import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -8,6 +9,7 @@ import kotlinx.android.synthetic.main.activity_coroutine_demo.*
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 
 class CoroutineDemo : AppCompatActivity() {
 
@@ -33,5 +35,18 @@ class CoroutineDemo : AppCompatActivity() {
             Log.d("MyTag", "Download user $i in ${Thread.currentThread().name}")
         }
     }
+
+    /**
+     * Thread switching
+     */
+
+   /*private suspend fun downloadUserData() {
+        for (i in 1..200000) {
+            withContext(Dispatchers.Main) {
+                coroutine_message_tv.text = "Downloading user $i in ${Thread.currentThread().name}"
+            }
+        }
+
+    }*/
 
 }

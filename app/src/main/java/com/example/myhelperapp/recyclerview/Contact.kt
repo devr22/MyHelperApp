@@ -1,6 +1,9 @@
 package com.example.myhelperapp.recyclerview
 
 data class Contact(
-    val name: String,
-    val phone: String
+    val serialNo: Int,
+    val qualification: String,
+    val year: String,
+    val university: String,
+    val proofOfPassing: String
 )

@@ -12,4 +12,9 @@
     <string name="download_user_date">Download User Date</string>
     <string name="increase_count">Increase Count</string>
     <string name="useful_layout_and_widgets">Useful Layout and Widgets</string>
+    <string name="table_layout">Table Layout</string>
+    <string name="residential">Residential</string>
+    <string name="camera">Camera</string>
+    <string name="take_picture">Take Picture</string>
+    <string name="custom_popup">Custom Popup</string>
 </resources>

@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.myhelperapp.R
 import kotlinx.android.synthetic.main.recycler_view_item.view.*
 
-class MyRecyclerViewAdapter (private val contactList: List<Contact>) : RecyclerView.Adapter<MyViewHolder>() {
+class MyRecyclerViewAdapter : RecyclerView.Adapter<MyViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         val view =
@@ -17,12 +17,10 @@ class MyRecyclerViewAdapter (private val contactList: List<Contact>) : RecyclerV
     }
 
     override fun getItemCount(): Int {
-        return contactList.size
+        return 2
     }
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
-        holder.nameTv?.text = contactList[position].name
-        holder.phoneTv?.text = contactList[position].phone
 
         /**
          * holder.view.candidate_name_tv.text = contactList[position].name
@@ -35,7 +33,5 @@ class MyRecyclerViewAdapter (private val contactList: List<Contact>) : RecyclerV
 }
 
 class MyViewHolder(private val view: View) : RecyclerView.ViewHolder(view) {
-    val nameTv: TextView? = view.findViewById(R.id.candidate_name_tv)
-    val phoneTv: TextView? = view.findViewById(R.id.candidate_phone_tv)
 }
 

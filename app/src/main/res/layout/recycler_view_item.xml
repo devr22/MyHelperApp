@@ -3,7 +3,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="4dp"
     app:cardBackgroundColor="@color/colorWhite"
     app:cardCornerRadius="5dp"
     app:cardElevation="5dp"
@@ -12,25 +11,112 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
+        android:padding="4dp"
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/candidate_name_tv"
+            android:id="@+id/s.no"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="4dp"
-            android:textColor="@color/colorAccent"
-            android:textSize="20sp"
+            android:gravity="end"
+            android:text="1"
+            android:textSize="@dimen/text_size_20"
             android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/candidate_phone_tv"
+        <LinearLayout
             android:layout_width="match_parent"
+            android:weightSum="10"
+            android:padding="2dp"
             android:layout_height="wrap_content"
-            android:padding="4dp"
-            android:textColor="@color/colorBlack"
-            android:textSize="18sp" />
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:text="Qualification: "
+                android:textSize="@dimen/text_size_18"/>
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/qualificationSpinner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="10"
+            android:padding="2dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:text="Year: "
+                android:textSize="@dimen/text_size_18"/>
+
+            <EditText
+                android:id="@+id/yearEt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="10"
+            android:padding="2dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:text="Board/University/Institute: "
+                android:textSize="@dimen/text_size_18"/>
+
+            <EditText
+                android:id="@+id/universityEt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="7"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="2dp"
+            android:weightSum="10"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:text="Proof of Passing: "
+                android:textSize="@dimen/text_size_18"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/certificateIv"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:gravity="center_horizontal"
+                android:layout_weight="4"/>
+
+        </LinearLayout>
 
     </LinearLayout>
 

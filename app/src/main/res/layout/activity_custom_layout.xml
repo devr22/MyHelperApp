@@ -33,4 +33,36 @@
 
     </RelativeLayout>
 
+    <Spinner
+        android:id="@+id/custom_layout_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:paddingStart="20dp"
+        android:spinnerMode="dropdown"
+        android:textDirection="ltr"
+        tools:ignore="RtlSymmetry" />
+
+    <Spinner
+        android:id="@+id/custom_layout_spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/custom_spinner_bg"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/custom_layout_spinner_validation_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Spinner Validation"/>
+
+    <Button
+        android:id="@+id/custom_layout_pop_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/custom_popup"/>
+
 </LinearLayout>
+

@@ -3,8 +3,10 @@ package com.example.myhelperapp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.myhelperapp.camera.CameraActivity
 import com.example.myhelperapp.coroutines.CoroutineDemo
 import com.example.myhelperapp.customLayouts.CustomLayoutActivity
+import com.example.myhelperapp.customLayouts.customtable.CustomTableActivity
 import com.example.myhelperapp.customnavdrawer.CustomNavDrawer
 import com.example.myhelperapp.navdrawerwithsubmenu.NavDrawerWithSubMenuActivity
 import com.example.myhelperapp.recyclerview.RecyclerViewActivity
@@ -39,6 +41,15 @@ class MainActivity : AppCompatActivity() {
         main_custom_layout.setOnClickListener {
             val intent = Intent(this, CustomLayoutActivity::class.java)
             startActivity(intent)
+        }
+
+        main_table_layout.setOnClickListener {
+            val intent = Intent(this, CustomTableActivity::class.java)
+            startActivity(intent)
+        }
+
+        main_camera.setOnClickListener {
+            startActivity(Intent(this, CameraActivity::class.java))
         }
     }
 }

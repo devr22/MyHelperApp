@@ -8,4 +8,5 @@
     <color name="colorBlack">#1E1E1E</color>
     <color name="textColor">#1E1E1E</color>
     <color name="colorGray">#D3D1D1</color>
+    <color name="tableHeaderColor">#67E6DC</color>
 </resources>

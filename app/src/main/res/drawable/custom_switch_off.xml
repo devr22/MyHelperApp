@@ -9,7 +9,7 @@
         tools:targetApi="m">
 
         <shape>
-            <solid android:color="@color/colorSwitchOff"/>
+            <solid android:color="@color/colorGray"/>
             <corners android:radius="@dimen/switch_radius"/>
             <size android:height="@dimen/switch_size"/>
         </shape>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp"
+    tools:context=".customLayouts.customtable.CustomTableActivity">
+
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TableLayout
+            android:id="@+id/table_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/tableHeaderColor"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_header_bg"
+                    android:gravity="center"
+                    android:padding="@dimen/table_header_padding"
+                    android:text="S. No."
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_size_18"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_header_bg"
+                    android:gravity="center"
+                    android:minWidth="200dp"
+                    android:padding="@dimen/table_header_padding"
+                    android:text="Qualification"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_size_18"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_header_bg"
+                    android:gravity="center"
+                    android:minWidth="150dp"
+                    android:padding="@dimen/table_header_padding"
+                    android:text="Year"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_size_18"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_header_bg"
+                    android:gravity="center"
+                    android:minWidth="250dp"
+                    android:padding="@dimen/table_header_padding"
+                    android:text="Board/University/Institute"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_size_18"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_header_bg"
+                    android:gravity="center"
+                    android:minWidth="200dp"
+                    android:padding="@dimen/table_header_padding"
+                    android:text="Proof of Passing"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_size_18"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/table_add_row"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_header_bg"
+                    android:gravity="center"
+                    android:padding="@dimen/table_header_padding"
+                    android:text="+"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_size_18"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_header_bg"
+                    android:gravity="center"
+                    android:padding="@dimen/table_header_padding"
+                    android:text="-"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_size_18"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/table_header_border"
+                    android:background="@color/colorBlack" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/table_header_border"
+                    android:background="@color/colorBlack" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/table_header_border"
+                    android:background="@color/colorBlack" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/table_header_border"
+                    android:background="@color/colorBlack" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/table_header_border"
+                    android:background="@color/colorBlack" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/table_header_border"
+                    android:background="@color/colorBlack" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/table_header_border"
+                    android:background="@color/colorBlack" />
+
+            </TableRow>
+
+        </TableLayout>
+
+    </HorizontalScrollView>
+
+</LinearLayout>
