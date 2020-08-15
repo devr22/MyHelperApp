@@ -17,4 +17,13 @@
     <string name="camera">Camera</string>
     <string name="take_picture">Take Picture</string>
     <string name="custom_popup">Custom Popup</string>
+    <string name="web_view">Web View</string>
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <string name="text_intro1">Android</string>
+    <string name="text_intro2">Artificial Intelligence</string>
+    <string name="text_intro3">Cloud Computing</string>
+    <string name="desc_intro1">Loves it and Passionate about it</string>
+    <string name="desc_intro2">Attracted by this word</string>
+    <string name="desc_intro3">Learning</string>
 </resources>

@@ -51,5 +51,9 @@ class MainActivity : AppCompatActivity() {
         main_camera.setOnClickListener {
             startActivity(Intent(this, CameraActivity::class.java))
         }
+
+        main_web_view.setOnClickListener {
+            startActivity(Intent(this, WebViewActivity::class.java))
+        }
     }
 }

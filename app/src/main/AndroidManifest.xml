@@ -3,6 +3,7 @@
     package="com.example.myhelperapp">
 
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -11,6 +12,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity
+            android:name=".introSlider.IntroSliderActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SplashScreenActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WebViewActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".camera.CameraActivity" />
         <activity android:name=".customLayouts.customtable.CustomTableActivity" />
         <activity android:name=".customLayouts.CustomLayoutActivity" />
@@ -22,13 +38,7 @@
             android:name=".navdrawerwithsubmenu.NavDrawerWithSubMenuActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".recyclerview.RecyclerViewActivity" />
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>
